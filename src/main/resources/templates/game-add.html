@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Add</title>
+    <link rel="stylesheet" th:href="@{css/style.css}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a th:href="@{/home}">Home</a></li>
+                <li><a th:href="@{/list}">Game List</a></li>
+                <li><a th:href="@{/addgame}">Add Game</a></li>
+                <li><a th:href="@{/contact}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <form action="" method="post">
+            <h1>Add Game</h1>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+            <label for="descricao">Descrição</label>
+            <input type="text" name="descricao" id="descricao">
+            <label for="desenvolvedora">Desenvolvedora</label>
+            <input type="text" name="desenvolvedora" id="desenvolvedora">
+            <label for="preco">Preco</label>
+            <input type="text" name="preco" id="preco">
+            <input type="submit" value="Add Game">
+        </form>
+    </div>
+
+</body>
+</html>
